@@ -35,7 +35,6 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
   color: #000000;
   text-align: center;
   padding: 14px 16px;
@@ -56,14 +55,24 @@
 }
 
 .circular--square {
-  float: left;
   width: auto;
   height: 50px; 
   opacity: 1;
   position: absolute;
   top: 3px;
-  left: 0px;
-}
+  left: 5px;
+  background-image: url(Immagini/small-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  float: left;
+  } 
+
+  .topnav a .circular--square {
+    float: left;
+  }
 .title{
   width: 830px;
   color: rgba(0,0,0,1);
@@ -76,12 +85,11 @@
 }
 
 .presentation {  
-  width: 1440px;  
+  width: 100%;  
   height: 350px;  
   display: flex;  
   flex-direction: row;  
   justify-content: center; 
-  
   gap: 40px;    
   padding-top: 50px ;  
   background-color: #464e63;
@@ -134,19 +142,6 @@
   margin-left: 12px;
 }
 
-.contact {
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #464e63;
-  outline-color: white;
-  border-color: white;
-  cursor: pointer;
-}
-
 button{
   width: 160px;
   height: 48px;
@@ -178,7 +173,7 @@ button{
       }
 
   .Products {
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height:1200px;
@@ -186,11 +181,10 @@ button{
   }
 
   .experience {
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     height:1100px;
-
   }
 
   .item-1 {
@@ -231,7 +225,12 @@ button{
     font-size: 20px;
     color: #000;
   }
-  
+  .title-2 {
+    height: 14px;
+    flex-grow: 0;
+    font-size: 20px;
+    color: #000;
+  }
   .subtitle-1 {
     height: 12px;
     font-size: 16px;
@@ -298,6 +297,14 @@ button{
     justify-content: center;
     gap: 80px;
   }
+  .skillicon-2 {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
 
   .icon-1 {
     width: auto;
@@ -342,3 +349,201 @@ button{
     text-align: center;
     color: white;
   }
+
+  /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  .title{
+    opacity: 0;
+  }
+
+  .circular--square {
+    position: absolute;
+    top: 3px;
+    left: -18px;
+    } 
+
+  .presentation {  
+    display: flex;  
+    flex-direction: column;   
+    padding: 0px;  
+    height: 750px;
+    margin-top: 50px;
+    width: auto;
+  }
+  .container-1 {
+    width: auto;
+    height: auto;
+    margin: 12px;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    top:250px;
+    
+  }
+  .big-photo {
+    width: auto;
+    height: 200px;
+    opacity: 1;
+    position: absolute;
+    top:50px;
+  }
+  
+  .name {
+    width: 760px;
+    color: rgba(255,255,255,1);
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .description {
+    width: 350px;
+    color: white;
+    position: absolute;
+    left: 0px;
+    font-size: 12px;
+    opacity: 1;
+    margin-top: 10px;
+  }
+  .box-button {
+    width: 160px;
+    height: 108px;
+    text-align: center;
+    margin-left: 0px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 590px;
+    left:100px;
+  }
+  
+  button{
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: none;
+    cursor: pointer; 
+  }
+  
+  .cv {
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    background-color: white;
+    border: none;
+  }
+
+  .my-project{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+    align-self: stretch;
+    padding: 60px 50px;
+    }
+
+    .item-1 {
+      height: 150px;
+      width: 520px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      padding: 12px 0;
+      margin-left: -70px;
+    }
+  
+    .item-2 {
+      height: 150px;
+      width: 300px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      padding: 12px 0;
+      margin-left: 40px;
+    }
+    .title-1 {
+      height: 14px;
+      flex-grow: 0;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+    .title-2 {
+      height: 14px;
+      flex-grow: 0;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .subtitle-1 {
+      height: 12px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .skills{
+      margin-left:45px;
+      margin-top: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+      color: #000;
+      align-self: stretch;
+      margin-bottom: 60px;
+    }
+    .skillicon {
+      margin-top: 60px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 100px;
+    }
+    .skillicon-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 270px;
+      padding-left: 85px;
+      position: absolute;
+      top:2280px;
+ 
+    }
+    .skillicon-2 {
+      flex-direction: column;
+      gap: 270px;
+      padding-left: 85px;
+      position: absolute;
+      top:3450px;
+
+    }
+    .icon-1 {
+      width: auto;
+      height: 200px;
+      color: #000;
+    }
+.credit {
+line-height: 15px;
+  font-size: 10px;
+}
+}
+@media (max-width: 1400px) {
+  .topnav a {
+    float: right;
+    padding: 14px 16px;
+  }
+  .big-photo {
+    position: absolute;
+    left: 0px;
+  }
+}

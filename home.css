@@ -35,7 +35,7 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
+ 
   color: #000000;
   text-align: center;
   padding: 14px 16px;
@@ -56,14 +56,24 @@
 }
 
 .circular--square {
-  float: left;
   width: auto;
   height: 50px; 
   opacity: 1;
   position: absolute;
   top: 3px;
-  left: 0px;
-}
+  left: 5px;
+  background-image: url(Immagini/small-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  float: left;
+  } 
+
+  .topnav a .circular--square {
+    float: left;
+  }
 .title{
   width: 830px;
   color: rgba(0,0,0,1);
@@ -76,34 +86,21 @@
 }
 
 .presentation {  
-  width: 1440px;  
+  width: 100%;  
   height: 228px;  
-  display: flex;  
-  flex-direction: row;  
-  justify-content: center;  
-  align-items: center;  
-  gap: 40px;    
+  gap: 10px;    
   padding: 60px 170px;  
   background-color: #464e63;
   margin-top: 50px;
+  align-items: center;  
 }
 
 .big-photo {
   width: auto;
   height: 200px;
   opacity: 1;
-  position: absolute;
-  left: 0px;
 }
 
-.container-1 {
-  width: 760px;
-  height: 100px;
-  margin: 12px;
-  opacity: 1;
-  position: absolute;
-  left: 310px;
-}
 .name {
   width: 760px;
   color: rgba(255,255,255,1);
@@ -117,9 +114,6 @@
   margin-top: 6px;
   margin-bottom: 6px;
   opacity: 1;
-  position: absolute;
-  top: 30px;
-  left: 0px;
 }
 
 
@@ -184,22 +178,10 @@
 .description {
   width: 760px;
   color: white;
-  position: absolute;
-  top: 76px;
-  left: 0px;
   font-size: 16px;
   opacity: 1;
 }
-.box-button {
-  width: 160px;
-  height: 108px;
-  text-align: center;
-  margin: 12px;
-  position: absolute;
-  align-items: center;
-  left: 1110px;
-  overflow: hidden;
-}
+
 
 .contact {
   color: rgba(255,255,255,1);
@@ -266,7 +248,25 @@ button{
   display: flex;
   justify-content: center;
 }
+.Products-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
+.Products-3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.Products-4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 .graphic {
   width: 25%;
   height: 335px;
@@ -415,11 +415,11 @@ button{
   border-radius: 2%;
 }    
 .final-exam {
-  width: 85%;
+  width: 83%;
   height: 340px;
   padding: 30px;
   margin-top: 60px;
-  background-image: url(Immagini/CS-1.png);
+  background-image: url(Immagini/CS-2.png);
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -450,8 +450,8 @@ button{
   gap: 24px;
   padding: 0;
   margin-top: 30px;
- 
 }
+
 .title-2 {
   width: 520px;
   height: 48px;
@@ -596,4 +596,347 @@ top: -5px;
   font-size: 14px;
   text-align: center;
   color: white;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+.topnav a {
+ 
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.circular--square {
+  position: absolute;
+  top: 3px;
+  left: -18px;
+  } 
+
+.title{
+  opacity: 0;
+}
+.presentation {  
+  display: flex;  
+  flex-direction: column;   
+  padding: 0px;  
+  height: 680px;
+  margin-top: 50px;
+  width: auto;
+}
+.big-photo {
+  width: auto;
+  height: 200px;
+  opacity: 1;
+  position: absolute;
+  top:50px;
+}
+
+.name {
+  width: auto;
+  color: rgba(255,255,255,1);
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+  position: absolute;
+  top:240px;
+}
+
+.degree {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  position: absolute;
+  top: 300px;
+}
+.label-1 {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  color: rgba(0,0,0,1);
+  position: center;
+  background-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  font-size: 12px;
+  border-radius: 2px;
+  opacity: 1;
+  margin: 2px;
+}
+.label-2 {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background: white;
+  padding-left:4px;
+  padding-right:4px;
+  padding-top: 2px;
+  margin: 2px;
+  opacity: 1;
+  position: center;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.label-3 {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background: white;
+  padding-left:4px;
+  padding-right:4px;
+  padding-top: 2px;
+  margin: 2px;
+  opacity: 1;
+  position: center;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.label-4 {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background: white;
+  padding-left:4px;
+  padding-right:4px;
+  padding-top: 2px;
+  margin: 2px;
+  opacity: 1;
+  position: center;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.description {
+  width: 200px;
+  color: white;
+  font-size: 16px;
+  opacity: 1;
+  position: absolute;
+  top: 480px;
+}
+.box-button {
+  width: 160px;
+  height: 108px;
+  text-align: center;
+  margin-left: 0px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 560px;
+  left:100px;
+}
+
+.contact {
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  opacity: 1;
+  background-color: #464e63;
+  outline-color: white;
+  border-color: white;
+  cursor: pointer;
+  position: relative;
+  left: 200px;
+}
+
+button{
+  width: 160px;
+  height: 48px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: none;
+  cursor: pointer; 
+}
+
+.cv {
+  color: rgba(0,0,0,1);
+  font-size: 16px;
+  
+  background-color: white;
+  border: none;
+}
+
+.Products {
+  width: 100%;
+  height:80px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.my-project{
+  font-size: px;
+}
+
+.description-2 {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.Products-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+}
+.Products-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:340px;
+  position: absolute;
+  top:1200px;
+}
+  .Products-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+    padding-top: 50px;
+  }
+
+  .Products-4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:360px;
+    position: absolute;
+    top:2500px;
+  }
+.graphic {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}
+.copywriting {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}    
+
+.discovery {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+ 
+
+}    
+.wireframing {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}    
+
+.ui {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}    
+
+.usertest {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}    
+
+.text-box {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}    
+
+.text-box-central {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}    
+
+.text-box-final {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.final-exam {
+  width: 90%;
+  height: 320px;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image: url(Immagini/CS-1.png);
+} 
+.inputbox{
+  margin-top: 10px;
+  width: 350px;
+}
+.container {
+  margin-bottom: 25px;
+ 
+}
+.credit {
+line-height: 15px;
+  font-size: 8px;
+}
+}
+@media (max-width: 1400px) {
+  .topnav a {
+    float: right;
+    padding: 14px 16px;
+  }
+  .big-photo {
+    position: absolute;
+    left: 0px;
+  }
+  .presentation {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+  }
+
+  .box-button {
+  position: absolute;
+  right:200px;
+  align-items: center;
+  width: 160px;
+  height: 108px;
+  text-align: center;
+  margin: 12px;
+  overflow: hidden;
+  }
+  
+  .contact {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .cv {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
 }
