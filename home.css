@@ -621,7 +621,7 @@ top: -5px;
   display: flex;  
   flex-direction: column;   
   padding: 0px;  
-  height: 680px;
+  height: 760px;
   margin-top: 50px;
   width: auto;
 }
@@ -726,7 +726,7 @@ top: -5px;
   align-items: center;
   display: flex;
   position: absolute;
-  top: 560px;
+  top: 660px;
   left:100px;
 }
 
@@ -792,7 +792,7 @@ button{
   justify-content: center;
   gap:340px;
   position: absolute;
-  top:1200px;
+  top:1290px;
 }
   .Products-3 {
     width: 100%;
@@ -814,15 +814,14 @@ button{
     justify-content: center;
     gap:360px;
     position: absolute;
-    top:2500px;
+    top:2590px;
   }
 .graphic {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-
-
 }
+
 .copywriting {
   width: 90%;
   margin-left: 5%;
